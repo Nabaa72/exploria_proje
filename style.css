@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color:aliceblue;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(194, 18%, 76%, 0.5);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active{
+    color: rgb(73, 73, 20);
+}
+
+.Anasayfa {
+    height: 100vh;
+    background: url('home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Anasayfa-content {
+    color: rgba(167, 169, 59, 0.399);
+    max-width: 600px;
+}
+
+.Anasayfa-content h1 {
+    position: relative;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #c2c24a;
+}
+
+.Anasayfa-content h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 450;
+    line-height: 1.5;
+    color: #c2c24a;
+}
+.Anasayfa-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .1s;
+}
+
+
+.Anasayfa-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #d5e55f;;
+    color: #ffffff;
+    border: 2px solid rgb(232, 235, 78);
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:nth-child(1) {
+    background: transparent;
+    color: #d8de60;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(196, 196, 98);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+} 
+
+.Anasayfa-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Anasayfa-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: #95a642;
+    border: 2px solid #95a642;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.Anasayfa-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(48, 55, 57);
+    z-index: -1;
+    transition: .5s;
+}
+
+.Anasayfa-sci a:hover::before{
+    width: 100%;
+}
+#anasa2{
+    width: 100%;
+    height: auto;
+
+}
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+.Hakkımızda {
+    background: #211e1b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#myImage {
+    width: 100%;
+    height: auto;
+}
+
+.Hakkımızda h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.Hakkımızda p {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    color: #efebeb;
+    line-height: 2.5;
+    text-align: center;
+    margin: 70px;
+    padding: 70px;
+    border: 1px solid #ccc;
+  }
+
+
+/*.projeler {
+    background: #0b0d2b;
+    font-size: larger;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 0;
+}
+
+/* Flex container ve flex ayarları */
+.proje01, .proje02, .proje03, .proje04 {
+    display: flex;
+    justify-content: space-between; /* Eşit aralık sağlar */
+    align-items: center; /* Dikeyde ortalama yapar */
+}
+
+.proje01 img, .proje02 img, .proje03 img, .proje04 img {
+    width: 32%; /* Her img etiketinin genişliğini ayarlayın */
+    height: auto; /* Oranı korur */
+    gap: 0;
+    margin: 0; /* Fazla boşluk bırakmaz */
+    object-fit: cover; /* Görsellerin düzgün kesilmesini sağlar */
+}
+
+#hak {
+    width: 100%;
+    height: auto;
+}
+
+.projeler-navbar {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+
+  .projeler-navbar a {
+    color: white; /* Yazı rengi */
+    margin: 0 15px; /* Her bir bağlantı arasında boşluk */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    font-weight: bold; /* Yazıyı kalın yapar */
+    font-size: 16px; /* Yazı boyutu */
+    transition: color 0.3s ease; /* Renk geçişi */
+}
+.projeler-navbar a:hover {
+    color: rgba(167, 169, 59, 0.399); /* Üzerine gelince bağlantı rengini değiştirir */
+}
+
+
+
+
+/* Görsel boşluklarını sıfırlar */
+.proje img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Eğer sütunlar arasında fazladan boşluk varsa font-size'ı sıfırlayabilirsiniz */
+.proje01, .proje02 {
+    font-size: 0; /* Bu, img etiketleri arasında ekstra boşluğu sıfırlar */
+}
+
+.proje01 img, .proje02 img {
+    font-size: initial; /* img etiketlerinin boyutlarını geri getirir */
+}
+
+/* Varsayılan paddingsiz bir flex container */
+.projeler {
+    padding: 0;
+    margin: 0;
+    background: #0b0d2b;
+}
+
+#proje001{
+    margin-bottom: 40px;
+}
+
+
+.fotograf-container {
+    text-align: center; /* Fotoğrafları ortalamak için */
+  }
+  
+  img {
+    max-width: 100%; /* Fotoğrafın genişliği en fazla konteynerın genişliği kadar olsun */
+    height: auto; /* Yükseklik otomatik olarak ayarlansın */
+    margin: 10px auto; /* Üst ve alt boşluk, yatayda ortala */
+  }
+
+  .ileti {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* İçerikleri dikey olarak ortala */
+    height: 150px; /* Kutunun yüksekliği (ayarlanabilir) */
+    width: 400px; /* Kutunun genişliği (ayarlanabilir) */
+    border: 1px solid white; /* Kutuya bir sınır ekledik */
+  }
+  
+  .sol-yazi, .sag-yazi {
+    flex: 1; /* Her iki kutu da eşit genişlikte olsun */
+    text-align: center; /* Yazıları ortala */
+  }
+  
+  .cizgi {
+    width: 2px; /* Çizginin kalınlığı */
+    height: 100%; /* Çizginin yüksekliği */
+    background-color: white; /* Çizginin rengi */
+  }
+  
+
+
+
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #e6e6e6;
+}
+
+main {
+    padding-top: 65px; /* Main kısmının üstüne 30px boşluk */
+}
+
+/* İletişim bölümünü stilize et */
+.iletisim-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #e6e6e6;
+}
+
+/* İletişim bilgileri alanı */
+.iletisim-info {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.iletisim-info h2 {
+    font-size: 24px;
+    color: #b2b2b2;
+}
+
+.info-group h3 {
+    font-size: 18px;
+    color: #f8c012;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.info-group p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* İletişim formu alanı */
+.iletisim-form {
+    flex: 1;
+    background-color: #1b1b1b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    background-color: #2b2b2b;
+    border: 1px solid #666;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #e6e6e6;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #f8c012;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #f8c012;
+    color: #1b1b1b;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #d6a70b;
+}
+
+/* Genel stil için ayarlamalar */
+@media (max-width: 768px) {
+    .iletisim-container {
+        flex-direction: column;
+    }
+
+    .iletisim-info {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.imaage-container {
+    display: inline-block;
+    padding: 10px; /* Optional padding */
+    max-height: 80px
+}
+#logoyel {
+    filter: brightness(0) invert(1);
+}

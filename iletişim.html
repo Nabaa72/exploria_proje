@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Exploria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img id="logoyel" src="logo_yellow.jpg" style="margin:0" class="imaage-container" />
+        <nav class="navbar">
+            <a href="layout.html">Anasayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="projeler.html">Projeler</a>
+            <a href="iletişim.html" class="active">İletişim</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="iletisim-container">
+            <div class="iletisim-info">
+                <h2>Samsun / Türkiye</h2>
+                <div class="info-group">
+                    <h3>Teknopark Merkez:</h3>
+                    <p>OMÜ Atakum Yerleşkesi<br>Atakum/Samsun</p>
+                </div>
+                <div class="info-group">
+                    <h3>Kirazlık Fabrika:</h3>
+                    <p>Yaşar Doğu Cd. No:40, 55300<br>Merkez OSB/Tekkeköy/Samsun</p>
+                </div>
+                <div class="info-group">
+                    <h3>İletişim</h3>
+                    <p>TEL: 0362 238 69 65<br>FAX: 0362 238 69 68<br>info@www.exploria.com.tr</p>
+                </div>
+            </div>
+
+            <div class="iletisim-form">
+                <form action="#" method="post">
+                    <label for="name">Adınız (gerekli)</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-posta adresiniz (gerekli)</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Konu</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <label for="message">İletiniz</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+
+                    <button type="submit" class="btn-submit">Gönder</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
